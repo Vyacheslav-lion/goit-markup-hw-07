@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  padding: 24px 94px 25px 0;
+}
+
+.nav__logo-web {
+  color: $decoration-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+
+.nav__logo-studio {
+  color: $black-text-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu__link {
+  color: $nav-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 32px 0;
+
+  &:hover,
+  &:focus {
+    color: $decoration-color;
+  }
+}
+
+.nav-menu__item {
+  position: relative;
+  padding: 32px 0;
+}
+
+.nav-menu__link--active-page::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 4px;
+  width: 100%;
+  height: 4px;
+  color: $decoration-color;
+  background-color: $decoration-color;
+}
+
+.communication {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.tel {
+  margin-left: 30px;
+}
+
+.communication__link {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: $decoration-color;
+  }
+}
+
+.communication__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
